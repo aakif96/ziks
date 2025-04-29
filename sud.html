@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="sr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Sud časti</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body class="sud-body">
+  <div class="container">
+    <h1>⚖️ Marija protiv Alena</h1>
+
+    <section class="block">
+      <h2>📄 Optužnica</h2>
+      <p>
+        Okrivljeni, poznat kao <strong>Alen Akif</strong>, tereti se da je u privatnoj komunikaciji sa saučesnikom ("najbolji drug"):
+      </p>
+      <ul>
+        <li>Koristio rečnik koji ne priliči njegovim godinama.</li>
+        <li>Ponašao se kao da nije svesno u ozbiljnoj vezi.</li>
+        <li>Misleći da se šali, nije razmišljao kako to može da zvuči drugoj strani.</li>
+      </ul>
+    </section>
+
+    <section class="block">
+      <h2>📁 Dokazi</h2>
+      <ul>
+        <li>Zabeleženi trag poruka.</li>
+        <li>Screenshoti poruka (koje ona ima u svom telefonu).</li>
+        <li>Njeno razočarano lice.</li>
+        
+      </ul>
+    </section>
+
+    <section class="block">
+      <h2>🔨 Presuda</h2>
+      <ul>
+        <li>Kriv u 3 tačke. Kazna:</li>
+        <li>✅ Svakodnevna doza pažnje.</li>
+        <li>✅ Jedna večera po njenom izboru.</li>
+        <li>✅ Povremeno trpljenje PMS-a bez komentara.</li>
+        <li>✅ Iskreno izvinjenje, svaki put kad bude potrebno.(Neće više biti potrebno)</li>
+      </ul>
+    </section>
+
+    <button id="acceptBtn">
+        <a href="exit.html" style="text-decoration: none; color: white;">Prihvatam izvinjenje</a>
+      </button>
+  </div>
+
+  <!-- Zatvorski overlay sa animacijom izlaska iz zatvora -->
+  <div id="overlay" class="hidden">
+    <div class="prison">
+      <!-- Efekat ćelije - sa zagradama kao zatvor -->
+      <div class="bars"></div>
+      <div class="message-box">
+        <!-- Slika i ime se prikazuju ovde -->
+        <img src="moja-slika.jpg" alt="Kazna" class="profile-img" />
+        <h2>Optuženi: [Tvoje ime]</h2>
+        <p>Izvinjenje prihvaćeno. Počnite da izlazite iz zatvora...</p>
+        <button id="closeBtn">Zatvori</button>
+      </div>
+    </div>
+  </div>
+
+  
+</body>
+</html>

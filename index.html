@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="sr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Login</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="login-container">
+    <h1>Unesi šifru(Već je znaš)</h1>
+    <form onsubmit="return proveriSifru(event)">
+      <input type="password" id="sifra" placeholder="Šifra..." required />
+      <button type="submit">Prijavi se</button>
+    </form>
+  </div>
+
+  <script>
+    function proveriSifru(e) {
+      e.preventDefault();
+      const sifra = document.getElementById("sifra").value;
+      if (sifra === "1989") { // zameni sa stvarnom šifrom
+        window.location.href = "sud.html";
+      } else {
+        alert("Pogrešna šifra 🤔");
+      }
+    }
+  </script>
+</body>
+</html>
